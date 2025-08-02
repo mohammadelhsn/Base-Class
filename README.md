@@ -1,69 +1,21 @@
-# React + TypeScript + Vite
+# 📘 Base-Class
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the base class for all my class websites made with React. One codebase I can easily maintain and configure that works for all types of classes
 
-Currently, two official plugins are available:
+You can see it in action [here](https://mohammadelhsn.github.io/CP104) or any other course I have created documentation for
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Stack
 
-## Expanding the ESLint configuration
+| Technology   | Icon                                                                       |
+| ------------ | -------------------------------------------------------------------------- |
+| React        | ![React](https://go-skill-icons.vercel.app/api/icons?i=react)              |
+| TypeScript   | ![TypeScript](https://go-skill-icons.vercel.app/api/icons?i=ts)            |
+| NodeJS       | ![NodeJS](https://go-skill-icons.vercel.app/api/icons?i=nodejs)            |
+| Material UI  | ![Material UI](https://go-skill-icons.vercel.app/api/icons?i=mui)          |
+| GitHub Pages | ![GitHub Pages](https://go-skill-icons.vercel.app/api/icons?i=githubpages) |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 📱 Responsive Design – Optimized for desktop, tablet, and mobile.
+- 🎨 Material Design – Clean UI powered by Material UI.
+- 🌙 Dark & Light Theme Support – Easily switch between modes.
