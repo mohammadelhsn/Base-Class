@@ -1,7 +1,6 @@
+/** REACT */
+
 import { useEffect, useState } from 'react';
-
-// React
-
 import { useParams, useNavigate } from 'react-router-dom';
 
 /** MUI COMPONENTS */
@@ -42,7 +41,7 @@ import Settings from '../data/Settings';
 
 const LabAssignmentPage = (opts: LabsAssignmentsOpts) => {
 	const { num } = useParams<{ num: string; }>();
-	const navigate = useNavigate(); // Hook for navigation
+	const navigate = useNavigate();
 	const [dataSource, setDataSource] = useState<AssessmentDataType>();
 	const [loading, setLoading] = useState<boolean>(true);
 	useEffect(() => {
