@@ -85,11 +85,11 @@ export interface CardTypes {
 
 export interface TaskData {
 	name: string;
-	id: string; // id: t{num}
+	id: string;
 	description: string;
-	objectives: string[]; // list of goals or objectives
-	sampleOutput: string; // example output or result, as a string
-	skills: string[]; // skills or tech demonstrated, e.g. ["Python", "Multiline Strings"]
+	objectives: string[];
+	sampleOutput: string;
+	skills: string[];
 }
 
 export interface ConstantsData {

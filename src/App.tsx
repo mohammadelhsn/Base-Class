@@ -42,7 +42,7 @@ const App = () => {
 	const toggleColorMode = () => {
 		setMode((prevMode) => {
 			const nextMode = prevMode === 'light' ? 'dark' : 'light';
-			localStorage.setItem('colorMode', nextMode); // Save preference
+			localStorage.setItem('colorMode', nextMode);
 			return nextMode;
 		});
 	};
